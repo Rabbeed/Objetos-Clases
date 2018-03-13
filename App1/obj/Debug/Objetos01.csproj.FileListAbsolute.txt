@@ -1,0 +1,6 @@
+C:\Users\Rabbeed\source\repos\Objetos\App1\bin\Debug\App1.exe.config
+C:\Users\Rabbeed\source\repos\Objetos\App1\bin\Debug\App1.exe
+C:\Users\Rabbeed\source\repos\Objetos\App1\bin\Debug\App1.pdb
+C:\Users\Rabbeed\source\repos\Objetos\App1\obj\Debug\Objetos01.csproj.CoreCompileInputs.cache
+C:\Users\Rabbeed\source\repos\Objetos\App1\obj\Debug\App1.exe
+C:\Users\Rabbeed\source\repos\Objetos\App1\obj\Debug\App1.pdb

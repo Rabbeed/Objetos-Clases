@@ -1,0 +1,7 @@
+C:\Users\Rabbeed\source\repos\Objetos\Objetos02\bin\Debug\Objetos02.exe.config
+C:\Users\Rabbeed\source\repos\Objetos\Objetos02\bin\Debug\Objetos02.exe
+C:\Users\Rabbeed\source\repos\Objetos\Objetos02\bin\Debug\Objetos02.pdb
+C:\Users\Rabbeed\source\repos\Objetos\Objetos02\obj\Debug\Objetos02.csprojResolveAssemblyReference.cache
+C:\Users\Rabbeed\source\repos\Objetos\Objetos02\obj\Debug\Objetos02.csproj.CoreCompileInputs.cache
+C:\Users\Rabbeed\source\repos\Objetos\Objetos02\obj\Debug\Objetos02.exe
+C:\Users\Rabbeed\source\repos\Objetos\Objetos02\obj\Debug\Objetos02.pdb
