@@ -10,29 +10,35 @@ namespace Objetos03
     {
         static void Main(string[] args)
         {
-            CuentaBancaria cuenta = null;
-            Cliente clientazo;
+            Banco mibanco = new Banco("BBVA");
+            CuentaBancaria cta;
 
-            //Crea una cuenta bancaria con saldo de 500
-            Console.WriteLine("Creando al cliente Juan Perez");
-            clientazo = new Cliente("Juan Perez");
+            //Creacion de clientes
+            mibanco.AgregaCliente(new Cliente("Juan Camaney"));
+            mibanco.AgregaCliente(new Cliente("Jessica Alba"));
+            mibanco.AgregaCliente(new Cliente("Tony Soprano"));
+            mibanco.AgregaCliente(new Cliente("Jack Bauer"));
 
-            Console.WriteLine("Creando una cuenta con saldo de 4000");
-            clientazo.Cuenta = new CuentaBancaria(4000);
-            cuenta = clientazo.Cuenta;
+            // agregar dinero a cada cliente
+            mibanco.Clientes[0].Cuenta = new CuentaBancaria(100);
+            mibanco.Clientes[1].Cuenta = new CuentaBancaria(200);
+            mibanco.Clientes[2].Cuenta = new CuentaBancaria(300);
+            // comparte cuenta
+            mibanco.Clientes[3].Cuenta = mibanco.Clientes[1].Cuenta;
 
-            Console.WriteLine("Retiro de 2600");
-            cuenta.Retira(2600);
+            // retiros y depositos
+            mibanco.Clientes[0].Cuenta.Deposita(40);
+            mibanco.Clientes[2].Cuenta.Retira(50);
+            mibanco.Clientes[3].Cuenta.Deposita(100);
 
-            /*Console.WriteLine("Deposito de 1000");
-            cuenta.Deposita(1000);*/
+            Console.WriteLine("\tBanco {0}", mibanco.Nombre);
+            var cn = 1;
 
-            /*Console.WriteLine("Retiro de 170");
-            cuenta.Retira(170);*/
-
-            // Imprime saldo final de la cuenta
-            Console.WriteLine("Cliente [{0}] tiene un saldo de {1}",
-            clientazo.Nombre, cuenta.Saldo);
+            foreach(Cliente cli in mibanco.Clientes)
+            {
+                Console.WriteLine("Cliente_"+cn+": {0}, Saldo: ${1}", cli.Nombre, cli.Cuenta.Saldo);
+                cn++;
+            }
 
             Console.ReadLine();
 
