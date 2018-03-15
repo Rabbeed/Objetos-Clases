@@ -9,27 +9,34 @@ namespace Objetos03
     class Cliente
     {
         private string nombre;
-        private CuentaBancaria cuenta;
+        private List<CuentaBancaria> cuentas;
 
         // constructor
         public Cliente(string nom)
         {
-            this.nombre = nom;  
+            this.nombre = nom;
+            cuentas = new List<CuentaBancaria>();
         }
 
-        // propiedad
+        // propiedad nombre
         public string Nombre
         {
             get { return nombre; }
         }
 
-        // cuenta del cliente
-        public CuentaBancaria Cuenta
+        // Regresa cuentas del cliente //
+    
+        public List<CuentaBancaria> Cuentas
         {
-            get { return cuenta; }
-            set { cuenta = value; }
+            get { return cuentas; }
         }
 
+        // Agrega cuentas al arreglo
+        public void AgregarCuenta(CuentaBancaria cuenta)
+        {
+            cuentas.Add(cuenta);
+        }
 
     }
+    
 }

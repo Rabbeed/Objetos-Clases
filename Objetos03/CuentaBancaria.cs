@@ -8,7 +8,8 @@ namespace Objetos03
 {
     class CuentaBancaria
     {
-        private double saldo;
+        // poder heredar esta propiedad
+        protected double saldo;
 
         // constructor 
         public CuentaBancaria(double saldo)
@@ -28,8 +29,9 @@ namespace Objetos03
             saldo += cantidad;
         }
 
-        // retira una cantidad de la cuenta, regresa false si no existe saldo suficiente
-        public bool Retira(double cantidad)
+        // retira una cantidad de la cuenta, regresa false si no existe saldo suficiente, 
+        // Virtual para poder sobrecargar
+        public virtual bool Retira(double cantidad)
         {
             if (saldo >= cantidad)
             {
